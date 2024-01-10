@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  /* ẩn text-nav */
+  .text-nav {
+    display: none;
+  }
+  /*hiển thị navigation thành block  */
+  #nav-bar .container {
+    width: 100%;
+    display: block;
+  }
+  /* chỉnh lại viền của navigation */
+  #nav-bar a:link,
+  a:visited {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+  }
+  /* hiển thị phần about thành block */
+  #about .container {
+    display: block;
+    gap: 20px;
+  }
+  /* căn chỉnh */
+  #personal-info {
+    background-color: #f1f3f5;
+    padding-left: 0px;
+  }
+  #personal-info .mt-40 {
+    padding-left: 0;
+  }
+  #job-info .container {
+    display: flex;
+  }
+  .cer2 {
+    border-left: none;
+  }
+
+  /* Project Charter */
+}

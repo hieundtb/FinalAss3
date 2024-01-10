@@ -1,0 +1,301 @@
+/* xoa margin pad va thiet lap box sizing */
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+/* Banner */
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+#banner {
+  position: relative;
+  padding-bottom: 0;
+}
+.text-banner {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, 0);
+}
+.text-banner h1 {
+  text-transform: uppercase;
+}
+.text-banner span {
+  color: #bdc3c7;
+}
+/* Navigation bar */
+#nav-bar .container {
+  text-align: center;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+}
+.icon {
+  color: #4dabf7;
+  font-weight: bold;
+}
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container a {
+  text-decoration: none;
+  align-self: center;
+  border-left: 1px solid rgba(0, 68, 255, 0.363);
+  padding: 15px;
+}
+.nav5,
+.nav2 {
+  border-right: 1px solid rgba(0, 68, 255, 0.363);
+}
+
+.text-nav {
+  align-self: center;
+  display: inline-block;
+}
+
+#nav-bar a:hover,
+a:active {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+/* Personal Infomation */
+#about {
+  line-height: 1.6;
+}
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.mt-40 {
+  list-style-type: none;
+}
+#error-email {
+  color: red;
+  font-weight: 700;
+}
+/* can chinh khoang cach, font */
+.info1 {
+  font-weight: bold;
+}
+.icon-info {
+  color: aqua;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#personal-info {
+  background-color: #f1f3f5;
+  padding-left: 20px;
+}
+
+/* Carrer Infomation */
+/* can chinh noi dung va vien */
+.exp,
+.edu,
+.activity,
+.hob,
+.lang,
+.skill {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  border: solid 1px gainsboro;
+}
+.job-icon {
+  font-size: 50px;
+  opacity: 0.5;
+}
+.exp-details {
+  grid-row: 2;
+  grid-column: 1/-1;
+  padding: 20px;
+  align-self: start;
+}
+.exp-details ul {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+.exp-details li::first-line {
+  font-weight: bold;
+}
+.exp1-time {
+  background-color: aqua;
+  padding: 5px;
+}
+.exp-time {
+  font-style: italic;
+}
+/* can chinh hob bang flex */
+.hob .exp-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* border vong tron cac icon */
+.ic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 15px;
+}
+.ic-wrap {
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+}
+/* .ic-wrap i {
+  color: skyblue;
+} */
+.level {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.level1 {
+  background: lightgrey;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.lang .exp-details,
+.skill .exp-details {
+  justify-self: start;
+}
+
+/* Cetificate */
+.cer2 {
+  border-left: 1px solid #d6c08d;
+  border-bottom: 1px solid #d6c08d;
+}
+.cer1 {
+  border-bottom: 1px solid #d6c08d;
+}
+.cer1 ul,
+.cer2 ul,
+.cer3 ul {
+  list-style-type: none;
+}
+.img-cer {
+  width: 100%;
+}
+/* PROJECT */
+
+.proj-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+/* can chinh font, bo vien */
+.proj1 {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.proj-name {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  border-bottom: 1px solid #ddd;
+}
+.proj-info {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #ddd;
+}
+.proj-time {
+  background-color: #199cdb;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+.proj-speci {
+  border-collapse: collapse;
+  width: 100%;
+  height: 75%;
+}
+.proj-speci td {
+  padding: 8px;
+  text-align: left;
+}
+.proj-speci tr {
+  border: 1px solid #ddd;
+}
+/* CONTACTS */
+.contact {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  gap: 30px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+/* ADVANCED */
+#nav-bar .container {
+  position: relative;
+}
+.avatar1 {
+  position: absolute;
+  bottom: -60px;
+  left: 43%;
+  border-radius: 50%;
+  border: solid 8px #fff;
+  transform: scale(1.5);
+}
+
+.hidden {
+  display: none;
+}
+.exp .section-content,
+.edu .section-content,
+.activity .section-content,
+.hob .section-content,
+.lang .section-content,
+.skill .section-content,
+.view-more {
+  display: none;
+}
+/* Project Charter */
+.title {
+  border-bottom: 1px solid #ddd;
+}
+.lead {
+  border-bottom: 1px dotted #ddd;
+}
